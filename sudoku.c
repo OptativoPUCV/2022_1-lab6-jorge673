@@ -63,7 +63,7 @@ int is_valid(Node* n){
       cont1=0;cont2=0;
     }
     for(p=0;p<9;p++){
-      if(k>9)break;
+      if(k==9||k==10)break;
 
       i=3*(k/3) + (p/3) ;
       j=3*(k%3) + (p%3) ;
