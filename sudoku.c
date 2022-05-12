@@ -45,26 +45,7 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
-  int i,j,k,p,cont1=0,cont2=0;
 
-  for(k=1;i<10;k++){
-    for(i=0;i<9;i++){
-      for(j=0;j<9;j++){
-        if(n->sudo[i][j]==k){
-          cont1++;
-        }
-        if(n->sudo[j][i]==k){
-          cont2++;
-        }
-        if(cont1>1||cont2>1){
-          return 0;
-        }
-      }
-      cont1=0;cont2=0;
-    }
-    
-    printf("%d--------\n",k);
-  }
   return 1;
 }
 
