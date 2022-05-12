@@ -56,3 +56,14 @@ sudoku.c:48:11: error: unused variable 'sub' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 51c935f
+ju., 12 de may. de 2022 18:38:11: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:48:13: error: unused variable 'p' [-Werror=unused-variable]
+   int i,j,k,p,cont1=0,cont2=0;
+             ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d4fbfc9
