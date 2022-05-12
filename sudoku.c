@@ -64,9 +64,10 @@ int is_valid(Node* n){
         if(contV || contH)return 0;
       }
       contS=0;
+      contV=0;
+      contH=0;
     }
-    contV=0;
-    contH=0;
+    
   }
 
   return 1;
