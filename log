@@ -221,3 +221,9 @@ ju., 12 de may. de 2022 19:20:28:
  tests:  0|5
 total_score: 0/70
 b75ea47
+ju., 12 de may. de 2022 19:27:13: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+0f33ddc
