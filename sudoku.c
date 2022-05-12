@@ -38,9 +38,10 @@ void print_node(Node* n){
     for(i=0;i<9;i++){
        for(j=0;j<9;j++){
           printf("%d ", n->sudo[i][j]);
-          if(j%3==2 && j!=8)printf("|| ");
+          if(j%3==2 && j!=8)printf("| ");
         }
-       printf("\n======================\n");
+       printf("\n");
+       if(i%3==2 && j!=8)printf("---------------------\n");
     }
     printf("\n");
 }
