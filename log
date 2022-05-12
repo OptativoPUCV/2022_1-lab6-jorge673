@@ -180,3 +180,9 @@ ju., 12 de may. de 2022 19:03:04:
  tests:  2|4
 total_score: 15/70
 208c842
+ju., 12 de may. de 2022 19:04:20: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+ae591f8

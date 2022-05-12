@@ -61,7 +61,7 @@ int is_valid(Node* n){
       cont1=0;
     }
   }
-  print_node(n);
+
   return 1;
 }
 
@@ -95,7 +95,8 @@ List* get_adj_nodes(Node* n){
 
 
 int is_final(Node* n){
-    return 0;
+  print_node(n);
+  return 0;
 }
 
 Node* DFS(Node* initial, int* cont){
