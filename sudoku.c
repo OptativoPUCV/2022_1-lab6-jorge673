@@ -50,18 +50,18 @@ int is_valid(Node* n){
 
   int numero,k,p;
   int contS=0,contH=0,contV=0;
-
+  
   for(numero=1;numero<10;numero++){
     for(k=0;k<9;k++){
       for(p=0;p<9;p++){
         int i=3*(k/3) + (p/3) ;
         int j=3*(k%3) + (p%3) ;
         if(n->sudo[i][j]==numero)contS++;
-        if(contS)return 0;
       }
       for(p=0;p<9;p++){
         if(n->sudo[p][k]==numero)contV++;
         if(n->sudo[k][p]==numero)contH++;
+        if(contV || contH)return 0;
       }
       contS=0;
       contV=0;
