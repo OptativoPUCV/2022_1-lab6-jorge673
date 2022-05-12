@@ -186,3 +186,14 @@ ju., 12 de may. de 2022 19:04:20:
  tests:  2|4
 total_score: 15/70
 ae591f8
+ju., 12 de may. de 2022 19:14:33: 
+ sudoku.c | 23 +++++++++++++++--------
+ 1 file changed, 15 insertions(+), 8 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:51:18: error: unused variable 'j' [-Werror=unused-variable]
+   int numero,k,i,j,p;
+                  ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0b5b700

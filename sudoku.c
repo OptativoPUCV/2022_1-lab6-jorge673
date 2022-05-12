@@ -48,18 +48,25 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
-  int numero,sub,p;//hor,ver;
-  int cont1=0;
+  int numero,k,i,j,p;
+  int contS=0,contH=0,contV=0;
   for(numero=1;numero<10;numero++){
-    for(sub=0;sub<9;sub++){
+    for(k=0;k<9;k++){
       for(p=0;p<9;p++){
-        int i=3*(sub/3) + (p/3) ;
-        int j=3*(sub%3) + (p%3) ;
-        if(n->sudo[i][j]==numero)cont1++;
-        if(cont1>1)return 0;
+        int i=3*(k/3) + (p/3) ;
+        int j=3*(k%3) + (p%3) ;
+        if(n->sudo[i][j]==numero)contS++;
+        if(contS)return 0;
       }
-      cont1=0;
+      for(i=0;i<9;i++){
+        if(n->sudo[i][k]==numero)contV++;
+        if(n->sudo[k][i]==numero)contH++;
+        if(contV || contH)return 0;
+      }
+      contS=0;
     }
+    contV=0;
+    contH=0;
   }
 
   return 1;
