@@ -41,7 +41,7 @@ void print_node(Node* n){
           if(j%3==2 && j!=8)printf("| ");
         }
        printf("\n");
-       if(i%3==2 && j!=8)printf("---------------------\n");
+       if(i%3==2 && i!=8)printf("---------------------\n");
     }
     printf("\n");
 }
