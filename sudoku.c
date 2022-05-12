@@ -63,7 +63,7 @@ int is_valid(Node* n){
       for(p=0;p<9;p++){
         if(n->sudo[p][k]==numero)contV++;
         if(n->sudo[k][p]==numero)contH++;
-        
+        if(contV>1|| contH>1)return 0;
       }
       contS=0;
       contV=0;
