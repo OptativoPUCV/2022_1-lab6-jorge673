@@ -197,3 +197,9 @@ sudoku.c:51:18: error: unused variable 'j' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0b5b700
+ju., 12 de may. de 2022 19:15:11: 
+ sudoku.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  0|5
+total_score: 0/70
+e5344a1
