@@ -40,7 +40,7 @@ void print_node(Node* n){
           printf("%d ", n->sudo[i][j]);
           if(j%3==2 && j!=8)printf("|| ");
         }
-       printf("\n");
+       printf("======================\n");
     }
     printf("\n");
 }
