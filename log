@@ -18,3 +18,9 @@ c:\mingw\include\stdio.h:677:41: note: declared here
                                          ^~~~
 Compilation failed
 b99ab12
+ju., 12 de may. de 2022 17:04:01: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+4d79056
