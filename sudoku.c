@@ -37,7 +37,7 @@ void print_node(Node* n){
     int i,j;
     for(i=0;i<9;i++){
        for(j=0;j<9;j++){
-          if((j+1)%3==0)printf("||");
+          if(j%3==2)printf("||");
           printf("%d ", n->sudo[i][j]);
         }
        printf("\n");
