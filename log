@@ -4,3 +4,17 @@ ju., 12 de may. de 2022 17:02:19:
  tests:  2|4
 total_score: 15/70
 949c4b2
+ju., 12 de may. de 2022 17:03:39: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:71:5: error: too many arguments to function 'puts'
+     puts("%d--------",k);
+     ^~~~
+In file included from test.c:1:0:
+c:\mingw\include\stdio.h:677:41: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int    puts (const char *);
+                                         ^~~~
+Compilation failed
+b99ab12
