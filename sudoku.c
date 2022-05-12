@@ -47,7 +47,7 @@ int is_valid(Node* n){
 
   int i,j,k,p,cont1=0,cont2=0;
 
-  for(k=1;i<=9;k++){
+  for(k=1;i<10;k++){
     for(i=0;i<9;i++){
       for(j=0;j<9;j++){
         if(n->sudo[i][j]==k){
@@ -63,10 +63,12 @@ int is_valid(Node* n){
       cont1=0;cont2=0;
     }
     for(p=0;p<9;p++){
-        i=3*(k/3) + (p/3) ;
-        j=3*(k%3) + (p%3) ;
-        printf("%d ",n->sudo[i][j]);
-        if(p%3 == 2) printf("\n");
+      if(k==9)break;
+
+      i=3*(k/3) + (p/3) ;
+      j=3*(k%3) + (p%3) ;
+      printf("%d ",n->sudo[i][j]);
+      if(p%3 == 2) printf("\n");
     }
     printf("%d--------\n",k);
   }
