@@ -100,3 +100,17 @@ sudoku.c:53:13: error: unused variable 'i' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 898c5c3
+ju., 12 de may. de 2022 18:53:08: 
+ sudoku.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function 'print_node':
+sudoku.c:39:8: error: this 'for' clause does not guard... [-Werror=misleading-indentation]
+        for(j=0;j<9;j++)
+        ^~~
+sudoku.c:41:11: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
+           printf("%d ", n->sudo[i][j]);
+           ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6aabd78

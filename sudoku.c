@@ -47,11 +47,14 @@ void print_node(Node* n){
 int is_valid(Node* n){
 
   int numero,sub,p;//hor,ver;
+  int cont1=0;
   for(numero=1;numero<10;numero++){
     for(sub=0;sub<9;sub++){
       for(p=0;p<9;p++){
         int i=3*(sub/3) + (p/3) ;
         int j=3*(sub%3) + (p%3) ;
+        if(n->sudo[i][j]==numero)cont1++;
+        if(cont1>1)return 0;
       }
     }
   }
