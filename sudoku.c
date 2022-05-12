@@ -57,6 +57,7 @@ int is_valid(Node* n){
         if(n->sudo[i][j]==numero)cont1++;
         if(cont1>1)return 0;
       }
+      cont1=0;
     }
   }
   print_node(n);
