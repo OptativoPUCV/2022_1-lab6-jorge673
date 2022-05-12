@@ -79,3 +79,24 @@ ju., 12 de may. de 2022 18:45:38:
  tests:  2|4
 total_score: 15/70
 2d49a63
+ju., 12 de may. de 2022 18:50:13: 
+ sudoku.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'print_node':
+sudoku.c:39:8: error: this 'for' clause does not guard... [-Werror=misleading-indentation]
+        for(j=0;j<9;j++)
+        ^~~
+sudoku.c:41:11: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
+           printf("%d ", n->sudo[i][j]);
+           ^~~~~~
+sudoku.c: In function 'is_valid':
+sudoku.c:54:13: error: unused variable 'j' [-Werror=unused-variable]
+         int j=3*(sub%3) + (p%3) ;
+             ^
+sudoku.c:53:13: error: unused variable 'i' [-Werror=unused-variable]
+         int i=3*(sub/3) + (p/3) ;
+             ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+898c5c3
