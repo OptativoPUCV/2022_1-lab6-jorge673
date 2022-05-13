@@ -319,3 +319,9 @@ sudoku.c:122:6: error: void value not ignored as it ought to be
       ^
 Compilation failed
 24d5360
+ju., 12 de may. de 2022 20:17:02: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  10|0
+total_score: 70/70
+0b54508
