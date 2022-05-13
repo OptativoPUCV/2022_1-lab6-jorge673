@@ -289,3 +289,13 @@ sudoku.c:121:5: error: invalid use of void expression
      ^~~~
 Compilation failed
 6c24198
+ju., 12 de may. de 2022 20:08:41: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:121:13: error: void value not ignored as it ought to be
+     Node* n=pop(S);
+             ^~~
+Compilation failed
+36e9c6f
