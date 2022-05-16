@@ -126,6 +126,7 @@ Node* DFS(Node* initial, int* cont){
     while (aux){
       push(S,aux);
       aux=next(adj);
+      cont++;
     }
     
   }

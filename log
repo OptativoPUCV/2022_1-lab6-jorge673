@@ -325,3 +325,9 @@ ju., 12 de may. de 2022 20:17:02:
  tests:  10|0
 total_score: 70/70
 0b54508
+do., 15 de may. de 2022 20:55:09: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  10|0
+total_score: 70/70
+9059580
